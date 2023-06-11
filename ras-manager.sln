@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ras.DAL", "ras.DAL\ras.DAL.csproj", "{6D08599F-EAFE-44AF-B76E-BB4A40A18FFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ras.BLL", "ras.BLL\ras.BLL.csproj", "{1472E48D-C64E-4B9D-98DD-E281D174E63F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ras.BLL", "ras.BLL\ras.BLL.csproj", "{1472E48D-C64E-4B9D-98DD-E281D174E63F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ras.BLL.Services", "ras.BLL.Services\ras.BLL.Services.csproj", "{1A4FB472-B4CB-4903-AB2B-BD41E6FFCC63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1472E48D-C64E-4B9D-98DD-E281D174E63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1472E48D-C64E-4B9D-98DD-E281D174E63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1472E48D-C64E-4B9D-98DD-E281D174E63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4FB472-B4CB-4903-AB2B-BD41E6FFCC63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4FB472-B4CB-4903-AB2B-BD41E6FFCC63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4FB472-B4CB-4903-AB2B-BD41E6FFCC63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4FB472-B4CB-4903-AB2B-BD41E6FFCC63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

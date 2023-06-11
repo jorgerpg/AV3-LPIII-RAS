@@ -9,21 +9,17 @@ namespace ras.BLL
     {
         public static Pessoa Add(Pessoa _pessoa)
         {
-            using (var dbContext = new RasContext())
-            {
-                var pessoa = dbContext.Add(_pessoa);
-                dbContext.SaveChanges();
-                return pessoa.Entity;
-            }
+            using var dbContext = new RasContext();
+            var pessoa = dbContext.Add(_pessoa);
+            dbContext.SaveChanges();
+            return pessoa.Entity;
         }
 
         public static Pessoa GetById(int Id)
         {
-            using (var dbContext = new RasContext())
-            {
-                var pessoa = dbContext.Pessoas.Single(p => p.PessoaId == Id);
-                return pessoa;
-            }
+            using var dbContext = new RasContext();
+            var pessoa = dbContext.Pessoas.Single(p => p.PessoaId == Id);
+            return pessoa;
         }
         public static List<Pessoa> GetAll()
         {
@@ -38,7 +34,7 @@ namespace ras.BLL
             using (var dbContext = new RasContext())
             {
                 var pessoa = dbContext.Pessoas.Single(p => p.PessoaId == _pessoa.PessoaId);
-                pessoa.Nome= _pessoa.Nome;
+                pessoa.Nome = _pessoa.Nome;
                 pessoa.SkillPessoas = _pessoa.SkillPessoas;
                 pessoa.ProjetoPessoas = _pessoa.ProjetoPessoas;
                 pessoa.EventoPessoas = _pessoa.EventoPessoas;
@@ -58,3 +54,4 @@ namespace ras.BLL
             }
         }
     }
+}

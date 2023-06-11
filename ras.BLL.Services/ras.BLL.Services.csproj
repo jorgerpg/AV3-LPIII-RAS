@@ -6,4 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ras.BLL\ras.BLL.csproj" />
+    <ProjectReference Include="..\ras.DAL\ras.DAL.csproj" />
+  </ItemGroup>
+
 </Project>

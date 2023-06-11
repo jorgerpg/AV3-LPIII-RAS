@@ -1,0 +1,17 @@
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\obj\Debug\net6.0\ras.BLL.csproj.AssemblyReference.cache
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\obj\Debug\net6.0\ras.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\obj\Debug\net6.0\ras.BLL.AssemblyInfoInputs.cache
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\obj\Debug\net6.0\ras.BLL.AssemblyInfo.cs
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\obj\Debug\net6.0\ras.BLL.csproj.CoreCompileInputs.cache
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\bin\Debug\net6.0\ras.BLL.deps.json
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\bin\Debug\net6.0\ras.BLL.runtimeconfig.json
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\bin\Debug\net6.0\ras.BLL.dll
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\bin\Debug\net6.0\ras.BLL.pdb
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\bin\Debug\net6.0\ras.DAL.dll
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\bin\Debug\net6.0\ras.DAL.pdb
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\obj\Debug\net6.0\ras.BLL.csproj.CopyComplete
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\obj\Debug\net6.0\ras.BLL.dll
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\obj\Debug\net6.0\refint\ras.BLL.dll
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\obj\Debug\net6.0\ras.BLL.pdb
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\obj\Debug\net6.0\ras.BLL.genruntimeconfig.cache
+C:\Users\jorge\source\repos\ras-manager\ras.BLL\obj\Debug\net6.0\ref\ras.BLL.dll

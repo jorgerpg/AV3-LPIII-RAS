@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ras.BLL 
+namespace ras.BLL
 {
     using ras.DAL.sakila;
     using System.Data.Entity;
@@ -47,12 +47,13 @@ namespace ras.BLL
         }
         public static void Excluir(int id)
         {
-        {
-            using (var dbContext = new RasContext())
             {
-                var projeto = dbContext.Projetos.Single(p => p.ProjetoId == id);
-                dbContext.Remove(projeto);
-                dbContext.SaveChanges();
+                using (var dbContext = new RasContext())
+                {
+                    var projeto = dbContext.Projetos.Single(p => p.ProjetoId == id);
+                    dbContext.Remove(projeto);
+                    dbContext.SaveChanges();
+                }
             }
         }
     }
