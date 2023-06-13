@@ -1091,6 +1091,15 @@
             "rid": "win"
           }
         }
+      },
+      "ras.MODEL/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ras.MODEL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ras.MODEL.dll": {}
+        }
       }
     }
   },
@@ -3524,6 +3533,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ras.MODEL/1.0.0": {
+      "type": "project",
+      "path": "../ras.MODEL/ras.MODEL.csproj",
+      "msbuildProject": "../ras.MODEL/ras.MODEL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3533,23 +3547,29 @@
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
       "MySql.EntityFrameworkCore >= 7.0.2",
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "ras.MODEL >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jorge\\.nuget\\packages\\": {}
+    "C:\\Users\\jorge\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.DAL\\ras.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.DAL\\ras.DAL.csproj",
       "projectName": "ras.DAL",
-      "projectPath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.DAL\\ras.DAL.csproj",
+      "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.DAL\\ras.DAL.csproj",
       "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.DAL\\obj\\",
+      "outputPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.DAL\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3562,7 +3582,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.MODEL\\ras.MODEL.csproj": {
+              "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.MODEL\\ras.MODEL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

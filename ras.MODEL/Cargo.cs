@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ras.DAL.sakila;
+namespace ras.MODEL;
 
 public partial class Cargo
 {

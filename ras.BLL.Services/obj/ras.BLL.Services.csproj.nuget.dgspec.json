@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL.Services\\ras.BLL.Services.csproj": {}
+    "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL.Services\\ras.BLL.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL.Services\\ras.BLL.Services.csproj": {
+    "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL.Services\\ras.BLL.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL.Services\\ras.BLL.Services.csproj",
+        "projectUniqueName": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL.Services\\ras.BLL.Services.csproj",
         "projectName": "ras.BLL.Services",
-        "projectPath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL.Services\\ras.BLL.Services.csproj",
+        "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL.Services\\ras.BLL.Services.csproj",
         "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL.Services\\obj\\",
+        "outputPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,11 +33,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL\\ras.BLL.csproj": {
-                "projectPath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL\\ras.BLL.csproj"
+              "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL\\ras.BLL.csproj": {
+                "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL\\ras.BLL.csproj"
               },
-              "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.DAL\\ras.DAL.csproj": {
-                "projectPath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.DAL\\ras.DAL.csproj"
+              "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.DAL\\ras.DAL.csproj": {
+                "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.DAL\\ras.DAL.csproj"
+              },
+              "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.MODEL\\ras.MODEL.csproj": {
+                "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.MODEL\\ras.MODEL.csproj"
               }
             }
           }
@@ -76,17 +83,21 @@
         }
       }
     },
-    "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL\\ras.BLL.csproj": {
+    "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL\\ras.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL\\ras.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL\\ras.BLL.csproj",
         "projectName": "ras.BLL",
-        "projectPath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL\\ras.BLL.csproj",
+        "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL\\ras.BLL.csproj",
         "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL\\obj\\",
+        "outputPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,8 +111,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.DAL\\ras.DAL.csproj": {
-                "projectPath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.DAL\\ras.DAL.csproj"
+              "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.DAL\\ras.DAL.csproj": {
+                "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.DAL\\ras.DAL.csproj"
+              },
+              "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.MODEL\\ras.MODEL.csproj": {
+                "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.MODEL\\ras.MODEL.csproj"
               }
             }
           }
@@ -141,17 +155,21 @@
         }
       }
     },
-    "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.DAL\\ras.DAL.csproj": {
+    "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.DAL\\ras.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.DAL\\ras.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.DAL\\ras.DAL.csproj",
         "projectName": "ras.DAL",
-        "projectPath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.DAL\\ras.DAL.csproj",
+        "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.DAL\\ras.DAL.csproj",
         "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.DAL\\obj\\",
+        "outputPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -164,7 +182,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.MODEL\\ras.MODEL.csproj": {
+                "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.MODEL\\ras.MODEL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -222,6 +244,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.MODEL\\ras.MODEL.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.MODEL\\ras.MODEL.csproj",
+        "projectName": "ras.MODEL",
+        "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.MODEL\\ras.MODEL.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

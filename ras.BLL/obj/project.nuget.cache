@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3DpabVis9qGQOJhf/wbg3mTFTPOLpl1PTPut/10Kq395zPKwNaIED9i8gU9c1eTxdWjoUXm8sb1eSbf270NSpg==",
+  "dgSpecHash": "tdWX/Nil1lTDJf7KnAMKnvBXey1N3+D3DcMPMw5H4npioZD6L9QyHubLk32Pr7v6pKbd6AkQ+kK9fXslwqyeDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jorge\\source\\repos\\ras-manager\\ras.BLL\\ras.BLL.csproj",
+  "projectFilePath": "C:\\Users\\jorge\\Source\\Repos\\Jorge2rpg\\AV3-LPIII-RAS\\ras.BLL\\ras.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jorge\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\jorge\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
