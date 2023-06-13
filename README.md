@@ -22,7 +22,7 @@ Disciplina:
 **Clonando o repositório:**<br/>
 1. Clique no botão de cor verde escrito "Code"
 2. Copie a URL fornecida na aba Local > HTTPS
-3. Abra o terminal no diretório desejado e digite o comando: `git clone https://github.com/Jorge2rpg/AV3-LPIII-RAS`
+3. Abra o terminal no diretório desejado e digite o comando: `git clone https://github.com/jorgerpg/AV3-LPIII-RAS`
 
 **Executando o projeto**<br/>
 > Executando o Back-end
@@ -87,4 +87,4 @@ MySQL   | ✔
 
 *Obs
 
-Foi utilizado multicamadas e a checar brench test
+Foi utilizado multicamadas e checar branch test para ver o ras.model separado bonitim.
