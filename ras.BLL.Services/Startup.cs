@@ -30,8 +30,6 @@ namespace ras.BLL.Services
 
 
             var app = builder.Build();
-
-            
             app.UseCors("AllowOrigin");
 
             app.UseHttpsRedirection();
