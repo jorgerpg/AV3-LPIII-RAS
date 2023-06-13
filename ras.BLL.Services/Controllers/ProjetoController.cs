@@ -3,8 +3,10 @@ using ras.DAL.sakila;
 
 namespace ras.BLL.Services.Controllers
 {
+
     public class ProjetoController : Controller
     {
+        
         [HttpGet(Name = "projetos")]
         public ActionResult<List<Projeto>> GetProjetos() {
             try
@@ -22,8 +24,22 @@ namespace ras.BLL.Services.Controllers
         {
             try
             {
-                var projeto = ProjetoRepository.GetById(id);
+                var projeto = ProjetoRepository.GetProjectById(id);
                 return Ok(projeto);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpGet("{id}", Name = "projetoPessoa")]
+        public ActionResult<ProjetoPessoa> GetResponsavelProjeto(int id)
+        {
+            try
+            {
+                var responsavel = ProjetoRepository.GetResponsavelProjeto(id);
+                return Ok(responsavel);
             }
             catch (Exception e)
             {

@@ -17,7 +17,7 @@ namespace ras.BLL
             }
         }
 
-        public static Projeto GetById(int Id)
+        public static Projeto GetProjectById(int Id)
         {
             using (var dbContext = new RasContext())
             {
@@ -33,6 +33,16 @@ namespace ras.BLL
                 return projeto;
             }
         }
+
+        public static Pessoa GetResponsavelProjeto(int Id)
+        {
+            using (var dbContext = new RasContext())
+            {
+                var pessoa = dbContext.Pessoas.Single(p => p.PessoaId == Id);
+                return pessoa;
+            }
+        }
+
         public static Projeto Update(Projeto _projeto)
         {
             using (var dbContext = new RasContext())

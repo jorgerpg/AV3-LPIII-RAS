@@ -1,114 +1,51 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.SpaServices.AngularCli;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Template.Data.Context;
-using Microsoft.EntityFrameworkCore;
-using Template.IoC;
-using Template.Application.AutoMapper;
-using AutoMapper;
-using Template.Swagger;
-using System.Text;
-using Template.Auth.Models;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
+﻿using Google.Protobuf.WellKnownTypes;
+using Microsoft.AspNetCore.Cors.Infrastructure;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.OpenApi.Models;
+using ras.BLL.Services.Controllers;
 
 namespace ras.BLL.Services
 {
-    public class Startup(IConfiguration configuration)
+
+    public class Startup
+{
+    public Startup(IConfiguration configuration)
     {
-        Configuration = configuration;
-    }
 
-    public IConfiguration Configuration { get; }
+            var builder = WebApplication.CreateBuilder();
 
-    // This method gets called by the runtime. Use this method to add services to the container.
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddControllersWithViews();
-
-        services.AddDbContext<TemplateContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("TemplateDB")).EnableSensitiveDataLogging());
-        NativeInjector.RegisterServices(services);
-
-        services.AddAutoMapper(typeof(AutoMapperSetup));
-        services.AddSwaggerConfiguration();
-
-        var key = Encoding.ASCII.GetBytes(Settings.Secret);
-        services.AddAuthentication(x =>
-        {
-            x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-        }).AddJwtBearer(x =>
-        {
-            x.RequireHttpsMetadata = false;
-            x.SaveToken = true;
-            x.TokenValidationParameters = new TokenValidationParameters
+            builder.Services.AddTransient<ProjetoController>();
+            builder.Services.AddTransient<PessoaController>();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddCors(options =>
             {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(key),
-                ValidateIssuer = false,
-                ValidateAudience = false
-            };
-        });
+                options.AddPolicy(name: "AllowOrigin",
+                    builder =>
+                    {
+                        builder.WithOrigins("https://localhost:7214", "http://localhost:3000")
+                                            .AllowAnyHeader()
+                                            .AllowAnyMethod();
+                    });
+            });
 
 
-        // In production, the Angular files will be served from this directory
-        services.AddSpaStaticFiles(configuration =>
-        {
-            configuration.RootPath = "ClientApp/dist";
-        });
-    }
+            var app = builder.Build();
 
-    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-    {
-        if (env.IsDevelopment())
-        {
-            app.UseDeveloperExceptionPage();
-        }
-        else
-        {
-            app.UseExceptionHandler("/Error");
-            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-            app.UseHsts();
+            
+            app.UseCors("AllowOrigin");
+
+
+            app.UseHttpsRedirection();
+            app.MapGet("/projetos", handler: ([FromServices] ProjetoController p) => p.GetProjetos().Result);
+            app.MapGet("/projeto/{id}", handler: ([FromServices] ProjetoController p, int id) => p.GetProjetoById(id).Result);
+            app.MapGet("/responsavel-projeto/{id}", handler: ([FromServices] ProjetoController p, int id) => p.GetResponsavelProjeto(id).Result);
+
+            app.MapGet("/pessoas", handler: ([FromServices] PessoaController p) => p.GetPessoas().Result);
+            app.MapGet("/pessoa/{id}", handler: ([FromServices] PessoaController p, int id) => p.GetPessoaById(id).Result);
+
+            app.Run();
         }
 
-        app.UseSwaggerConfiguration();
-
-        app.UseHttpsRedirection();
-        app.UseStaticFiles();
-        if (!env.IsDevelopment())
-        {
-            app.UseSpaStaticFiles();
-        }
-
-        app.UseRouting();
-
-        app.UseAuthentication();
-        app.UseAuthorization();
-
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapControllerRoute(
-                name: "default",
-                pattern: "{controller}/{action=Index}/{id?}");
-        });
-
-        app.UseSpa(spa =>
-        {
-            // To learn more about options for serving an Angular SPA from ASP.NET Core,
-            // see https://go.microsoft.com/fwlink/?linkid=864501
-
-            spa.Options.SourcePath = "ClientApp";
-
-            if (env.IsDevelopment())
-            {
-                spa.UseAngularCliServer(npmScript: "start");
-            }
-        });
-    }
-}
+    
+} 
 }

@@ -82,3 +82,4 @@ C:\Users\jorge\source\repos\ras-manager\ras.BLL.Services\obj\Debug\net6.0\refint
 C:\Users\jorge\source\repos\ras-manager\ras.BLL.Services\obj\Debug\net6.0\ras.BLL.Services.pdb
 C:\Users\jorge\source\repos\ras-manager\ras.BLL.Services\obj\Debug\net6.0\ras.BLL.Services.genruntimeconfig.cache
 C:\Users\jorge\source\repos\ras-manager\ras.BLL.Services\obj\Debug\net6.0\ref\ras.BLL.Services.dll
+C:\Users\jorge\source\repos\ras-manager\ras.BLL.Services\obj\Debug\net6.0\ras.BLL.Services.MvcApplicationPartsAssemblyInfo.cs

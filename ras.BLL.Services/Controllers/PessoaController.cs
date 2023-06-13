@@ -19,27 +19,27 @@ namespace ras.BLL.Services.Controllers
             }
         }
 
-        [HttpGet("{id}", Name = "pessoa")]
+       [HttpGet("{pessoaID}", Name = "person")]
         public ActionResult<Pessoa> GetPessoaById(int id)
         {
             try
             {
-                var pessoa = PessoaRepository.GetById(id);
+               var pessoa = PessoaRepository.GetById(id);
                 return Ok(pessoa);
             }
             catch (Exception e)
-            {
-                return BadRequest(e.Message);
+           {
+               return BadRequest(e.Message);
             }
         }
 
-        [HttpPost(Name = "projetos")]
-        public ActionResult<Projeto> AddProjeto(Projeto projeto)
+        [HttpPost(Name = "pessoa")]
+        public ActionResult<Pessoa> AddPessoa(Pessoa pessoa)
         {
             try
             {
-                var projetoCriado = ProjetoRepository.Add(projeto);
-                return Ok(projetoCriado);
+                var pessoaCriada = PessoaRepository.Add(pessoa);
+                return Ok(pessoaCriada);
             }
             catch (Exception e)
             {
