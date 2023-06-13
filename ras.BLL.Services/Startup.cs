@@ -34,7 +34,6 @@ namespace ras.BLL.Services
             
             app.UseCors("AllowOrigin");
 
-
             app.UseHttpsRedirection();
             app.MapGet("/projetos", handler: ([FromServices] ProjetoController p) => p.GetProjetos().Result);
             app.MapGet("/projeto/{id}", handler: ([FromServices] ProjetoController p, int id) => p.GetProjetoById(id).Result);
