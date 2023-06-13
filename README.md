@@ -1,6 +1,6 @@
 # RAS Manager
 
-## Equipe e corpo docente do PI
+## Equipe 
 
 Discentes (integrantes):
 
@@ -9,10 +9,13 @@ Discentes (integrantes):
 - Guilherme Almeida
 - Jorge Ricarte
 
-Docentes:
+Docente:
 
 - Edson Mota da Cruz
 
+Disciplina:
+
+- Linguagem de Programação III
 
 ## Como acessar
 
