@@ -84,3 +84,7 @@ MySQL   | ✔
 
 - Rotas para navegação entre telas: [Routes](src/Routes.js)
 - Conexão com Banco de Dados (MySQL): [server](server/index.js)
+
+*Obs
+
+Foi utilizado multicamadas e a checar brench test
